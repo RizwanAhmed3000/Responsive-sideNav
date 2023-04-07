@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    padding: 20px;
+    font-size: 30px;
+    position: fixed;
+    right: 0;
+}
+.fa-bars{
+    cursor: pointer;
+}
+.navContainer{
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    transform: translateX(0%);
+    transition: transform ease-in-out 250ms;
+}
+.list ul li a{
+    text-decoration: none;
+    color: white;
+}
+.list ul li{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.list ul li a i{
+    margin-right: 10px;
+}
+.list{
+    margin-top: 15px;
+}
+.hover, .hover i{
+    color: #b3b3b3 !important;
+    transition: color ease 250ms, fill ease 250ms;
+    fill: #b3b3b3 !important;
+}
+
+.hover:hover, .hover:hover i{
+    color: #fff !important;
+    fill: #1ed760 !important;
+    transition: color ease 250ms, fill ease 250ms;
+}
+.links{
+    padding: 10px;
+    font-size: 2rem;
+    /* background-color: wheat; */
+    position: absolute;
+    bottom: 10px;
+}
+.links a{
+    margin-right: 15px;
+}
+.closeBtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.3rem;
+}
+.notVisible{
+    transform: translateX(-100%);
+    transition: transform ease-in-out 250ms;
+}
+
+@media(min-width: 501px) and (max-width: 768px){
+    .navContainer{
+        width: 40%;
+    }
+}
+@media(min-width: 320px) and (max-width: 500px){
+    .navContainer{
+        width: 80%;
+    }
+}
